@@ -1,0 +1,18 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+
+# IDE and OS specific files
+.vscode/
+
+# Build artifacts
+dist/
+build/
+
+# Local configuration files
+app/.env  
+# app/config.py (decided to keep  it in the repo)
