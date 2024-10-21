@@ -9,6 +9,7 @@ class Joke(Base):
     joke_text = Column(String, nullable=False)
     category_id = Column(Integer, ForeignKey("categories.id", ondelete="CASCADE"))
     avg_rating = Column(Integer, default=0)
+    num_ratings = Column(Integer, default=0)
     created_at = Column(TIMESTAMP(timezone=True), server_default=text("now()"), nullable=False)
     updated_at = Column(TIMESTAMP(timezone=True), server_default=text("now()"), nullable=False)
 
